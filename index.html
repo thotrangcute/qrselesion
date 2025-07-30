@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>free QR code Generator</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="content-onemore">
+        <h1 class="onemore-contain">Free QR Code Generator</h1>
+      </div>
+      <div class="content-twomore">
+        <div class="twomore-contain">
+          <img src="/qrselector/img/Us-Dollar-Circled.png" />
+          <p class="contain-write">Free</p>
+        </div>
+        <div class="twomore-contain">
+          <img src="/qrselector/img/Clock.png" />
+          <p class="contain-write">QR made easy,in seconds</p>
+        </div>
+        <div class="twomore-contain">
+          <img src="/qrselector/img/Reduce.png" />
+          <p class="contain-write">Unlimited use and scans</p>
+        </div>
+      </div>
+      <div class="content-threemore">
+        <div class="threemore-thefirst">
+          <div class="threemore-firstone">
+            <div class="firstone-contentner sabothammuu">
+              <p class="contentner-write urlcontentner">URL</p>
+            </div>
+            <div class="firstone-contentner acehoaquyen">
+              <p class="contentner-write facebook">FACEBOOK</p>
+            </div>
+            <div class="firstone-contentner aecfiveText">
+              <p class="contentner-write">TEXT</p>
+            </div>
+            <div class="firstone-contentner">
+              <p class="contentner-write aeconeEmail">EMAIL</p>
+            </div>
+            <div class="firstone-contentner">
+              <p class="contentner-write aceonephone">IPHONE</p>
+            </div>
+            <div class="firstone-contentner">
+              <p class="contentner-write locationcontent">L0CATION</p>
+            </div>
+
+            <div class="firstone-contentner toggolecontent">
+              <p class="contentner-write aceoneWifi">WIFI</p>
+            </div>
+            <div class="firstone-contentner toggolecontent">
+              <p class="contentner-write aceoneVcard">VCARD</p>
+            </div>
+            <div class="firstone-contentner sectioner toggolecontent">
+              <p class="contentner-write aceoneggreview">GOOGLE REVIEW</p>
+            </div>
+          </div>
+          <div class="threemore-secondone">
+            <div class="secondone-contentier">
+              <div class="contentier-one">
+                <div class="contentier-onemore" id="conternierOne">
+                  <img
+                    src="/qrselector/img/Ảnh chụp màn hình 2025-07-16 100503.png"
+                  />
+                  <div
+                    class="onemore-name onemore"
+                    type="text"
+                    placeholder="Enter content"
+                  >
+                    Enter content
+                  </div>
+                  <p class="onemore-iconmomen">&#8743;</p>
+                  <div class="lop-phu"></div>
+                </div>
+
+                <div class="contentier-list" id="contentierList"></div>
+                <div class="contentier-onemore" id="toggleColorBox">
+                  <img src="/qrselector/img/colors;.png" />
+                  <div
+                    class="onemore-colors onemore"
+                    type="text"
+                    placeholder="Section colors"
+                  >
+                    Section colors
+                  </div>
+                  <p class="onemore-iconmomen">&#8744;</p>
+                  <div class="lop-phu"></div>
+                </div>
+
+                <div class="section" id="colorOptions">
+                  <label>Foreground color</label>
+                  <div class="radio-group">
+                    <label
+                      ><input type="radio" name="fg" id="singleColorRadio" />
+                      Single color</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="fg"
+                        id="gradientColorRadio"
+                        checked
+                      />
+                      Color gradient</label
+                    >
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="customEyeCheckbox" checked />
+                      Custom eye color
+                    </label>
+                  </div>
+
+                  <div class="color-options">
+                    <div class="color-box">
+                      <input type="color" id="color1" value="#000000" />
+                      <input type="text" id="colorText1" value="#000000" />
+                    </div>
+
+                    <div
+                      id="gradientControls"
+                      style="display: flex; align-items: center; gap: 5px"
+                    >
+                      <div class="swap-icon">
+                        <img src="/qrselector/img/chuyenhuown.png" />
+                      </div>
+                      <div class="color-box">
+                        <input type="color" id="color2" value="#00B55D" />
+                        <input type="text" id="colorText2" value="#00B55D" />
+                      </div>
+
+                      <div class="custom-dropdown" id="gradientDropdown">
+                        <div class="dropdown-selected" id="selectedOption">
+                          Radial Gradient &#8744;
+                        </div>
+                        <div class="dropdown-options" id="optionsList">
+                          <div data-value="Linear gradient" id="gradiention">
+                            Linear gradient
+                          </div>
+                          <div
+                            data-value="Radial Gradient"
+                            id="gradiention"
+                            class="active"
+                          >
+                            Radial Gradient
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="section" id="eyeColorSection">
+                    <label>Eye color</label>
+                    <div class="eye-color">
+                      <div>
+                        <label class="required">* Eye frame color</label>
+                        <div class="color-box boxertion">
+                          <input type="text" id="color3" />
+                          <input type="text" value="#539E44" />
+                        </div>
+                      </div>
+                      <div>
+                        <label class="required">* Eye ball color</label>
+                        <div class="color-box boxertion">
+                          <input type="text" id="color4" />
+                          <input type="text" value="#c3c100" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="section">
+                    <label>Background color</label>
+                    <div class="background-color">
+                      <div class="color-box">
+                        <input type="text" id="color5" />
+                        <input type="text" value="#ffffff" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentier-onemore" id="onemoretitle">
+                  <img src="/qrselector/img/images.png" />
+                  <div
+                    class="onemore-images onemore"
+                    type="text"
+                    placeholder="Add logo image"
+                  >
+                    Add logo image
+                  </div>
+                  <p class="onemore-iconmomen">&#8744;</p>
+                  <div class="lop-phu"></div>
+                </div>
+                <div class="logo-image" id="colortitle">
+                  <div class="image-addlogowwrite">
+                    <p class="">Upload your custom logo image</p>
+                  </div>
+                  <div class="image-addlogoanh">
+                    <div class="addlogoanh-upload"></div>
+                    <div class="addlogoanh-write">
+                      <div class="addlogoanh-iconer" id="openFileTrigger">
+                        <span
+                          class="glyphicon glyphicon-open glycozoicon"
+                        ></span>
+                        <p class="">Upload</p>
+                      </div>
+                      <input type="file" id="fileInput" />
+                      <p class="">
+                        Accepted formats: .svg, .png, .jpg, .jpeg, gif. Max
+                        image size: 3Mb
+                      </p>
+                    </div>
+                  </div>
+                  <div class="image-addlogologon">
+                    <div class="addlogologon-write">
+                      <p class="">or Choose one of the following samples</p>
+                    </div>
+                    <div class="addlogologon-iconlogo">
+                      <img
+                        class="iconlogo-image"
+                        src="/qrselector/img/fb.png"
+                      />
+                      <img
+                        class="iconlogo-image"
+                        src="/qrselector/img/ínta.png"
+                      />
+                      <img
+                        class="iconlogo-image"
+                        src="/qrselector/img/stwiter.png"
+                      />
+                      <img
+                        class="iconlogo-image"
+                        src="/qrselector/img/ininin.png"
+                      />
+                      <img
+                        class="iconlogo-image"
+                        src="/qrselector/img/youtobr.png"
+                      />
+                      <img
+                        class="iconlogo-image"
+                        src="/qrselector/img/printer.png"
+                      />
+                      <p class="addlogologon-clearlogo">Clear Logo</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentier-onemore" id="designcolor">
+                  <img src="/qrselector/img/design.png" />
+                  <div
+                    class="onemore-design onemore"
+                    type="text"
+                    placeholder="Customize design"
+                  >
+                    Customize design
+                  </div>
+                  <p class="onemore-iconmomen">&#8744;</p>
+                  <div class="lop-phu"></div>
+                </div>
+                <div class="design-content" id="designContent">
+                  <div class="design-titleone">
+                    <div class="titleone-write">
+                      <p class="">Body shape</p>
+                    </div>
+                    <div class="titleone-logonen">
+                      <img
+                        class="logonen-image"
+                        id="designimage1"
+                        src="/qrselector/img/déign1.png"
+                      />
+                      <img
+                        class="logonen-image"
+                        id="designimage2"
+                        src="/qrselector/img/design2.png"
+                      />
+                      <img
+                        class="logonen-image"
+                        id="designimage3"
+                        src="/qrselector/img/design3.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="design-titletwo">
+                    <div class="titletwo-write">
+                      <p class="">Eye ball shape</p>
+                    </div>
+                    <div class="titletwo-logonen">
+                      <img
+                        class="logonen-imagesion"
+                        id="imagesion4"
+                        src="/qrselector/img/design4.png"
+                      />
+                      <img
+                        class="logonen-imagesion"
+                        id="imagesion5"
+                        src="/qrselector/img/design5.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contentier-two">
+                <div class="contentier-ace">
+                  <img class="ace-images" src="/qrselector/img/qr to.png" />
+                  <div class="overlaydis" id="overlaydis">
+                    <div class="overlayoutra" id="overlayoutra">
+                      <p class="">X</p>
+                    </div>
+                    <div class="overlaition">
+                      <img id="overlaydiver" src="/qrselector/img/qr to.png" />
+                    </div>
+                    <div class="overdoimoi">
+                      <div
+                        class="overdoimoi-text ocerdoichung"
+                        id="overdoimoiupdowwn"
+                      >
+                        &#10606;
+                      </div>
+                      <div
+                        class="overdoimoi-text ocerdoichung"
+                        id="overdoileftright"
+                      >
+                        &#8651;
+                      </div>
+                      <div
+                        class="overdoimoi-img ocerdoichung"
+                        id="overdoixoayright"
+                      >
+                        <img src="qrselector/img/hoandoi1.png" />
+                      </div>
+                      <div
+                        class="overdoimoi-img ocerdoichung"
+                        id="overdoixoaylefft"
+                      >
+                        <img src="qrselector/img/hoandoi2.png" />
+                      </div>
+                      <div class="ocerdoichung" id="overdoimoigiam">
+                        <span
+                          class="glyphicon glyphicon-zoom-out ocerdoichung"
+                        ></span>
+                      </div>
+                      <div class="ocerdoichung" id="overdoimoitanng">
+                        <span
+                          class="glyphicon glyphicon-zoom-in ocerdoichung"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contentier-hooover">
+                    <p class="hoover-write">
+                      <i class="far fa-eye"></i>
+                      preview
+                    </p>
+                  </div>
+                </div>
+                <div class="contentier-sabo">
+                  <p class="sabo-write">reset</p>
+                </div>
+                <div class="contentier-sanji">
+                  <div class="sanji-write">
+                    <p class="sanji-wvrit">Pick your size</p>
+                    <div class="slider-wrapper">
+                      <div class="slider-area">
+                        <input
+                          type="range"
+                          min="1"
+                          max="21"
+                          value="11"
+                          class="slider"
+                          id="qualitySlider"
+                        />
+                        <div class="dots">
+                          <div class="dot dot-onenice"></div>
+                          <div class="dot dot-secont"></div>
+                          <div class="dot"></div>
+                        </div>
+                        <div class="current-value" id="sliderValue">
+                          448 x 448 px
+                        </div>
+                      </div>
+                      <div class="slider-labels">
+                        <span>Low<br />quality</span>
+                        <span>High<br />quality</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sanji-size"></div>
+                </div>
+                <div class="contentier-boa">
+                  <p class="boa-QRcode">Create Qr code</p>
+                  <div class="boa-Dowload">
+                    Dowload &#8744;
+                    <div class="download-options" style="display: none">
+                      <p class="onetimePng">PNG</p>
+                      <p class="onetimePng">JPG</p>
+                      <p class="onetimePng">SVG</p>
+                      <p class="onetimePng">PDF</p>
+                    </div>
+                    <div id="downloadMessage">
+                      ✅ Bạn đã tải ảnh thành công!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-fourmore">
+        <div class="content-fourmore-oneslide">
+          <h1 class="oneslide-write">What type of QR Code can I create?</h1>
+        </div>
+        <div class="content-fourmore-twoslide">
+          <p class="twoslide-write">
+            QR Codes are entirely free and come with no expiry or scan limits
+          </p>
+        </div>
+        <div class="content-fourmore-baslide">
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/global-icon.png" />
+                URL
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to open a link to a webpage, social channel,
+                contact form, or Youtube
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/3gachj.png" />
+                Text
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to display text in any language, with no limit on
+                characters
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/email.png" />
+                Email
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to send an email to a specific person with a
+                pre-set message
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/pgone.png" />
+                Phone
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to call a contact directly, no need to type the
+                phone number
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/wiffi.png" />
+                Wifi
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to connect a Wifi network without typing the
+                password
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/mdi_location.png" />
+                Business profile
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to connect your business profile or website
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/bx_food-menu.png" />
+                Restaurent menu
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to connect your restaurant menu
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/moretocome.png" />
+                More to come
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Many features and updates are upcoming and we’re actively
+                working on them
+              </p>
+            </div>
+          </div>
+          <div class="baslide-content">
+            <div class="baslidecontent-onenice">
+              <p class="onenice-imgwwrite">
+                <img src="/qrselector/img/mdi_business-card-outline.png" />
+                URL
+              </p>
+            </div>
+            <div class="baslidecontent-twonice">
+              <p class="onenice-write">
+                Use this type to open a link to a webpage, social channel,
+                contact form, or Youtube
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-fivermorre">
+        <div class="contentfivermore-theone">
+          <p class="contentfivermoretheone-write">Frequently Asked Questions</p>
+        </div>
+        <div class="contentfivermore-thetwo">
+          <div class="contentfivermorethetwo-onesection">
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">What is a QR code?</p>
+              </div>
+              <div class="productsectioner">
+                A QR code (Quick Response code) is a type of barcode that can be
+                scanned using a smartphone or QR reader to quickly access
+                information such as websites, contact details, and more.
+              </div>
+            </div>
+
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  How does QR code work?
+                </p>
+              </div>
+              <div class="productsectioner">
+                A QR code works by encoding data into a two-dimensional pattern
+                of squares that can be read by a camera or scanner, then decoded
+                into readable information like URLs or text.
+              </div>
+            </div>
+
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  How do I create a QR code?
+                </p>
+              </div>
+              <div class="productsectioner" id="productsectioner">
+                <p class="stepone">
+                  Step 1: Select your QR code type: You may choose from URL,
+                  vCard, Plain Text, Facebook, WiFi, and Google Review.
+                </p>
+                <p class="stepone">
+                  Step 2: Fill all the details: Enter all the information we
+                  require that appears. Then, select “Generate.”
+                </p>
+                <p class="stepone">Step 3: Download your QR Code.</p>
+              </div>
+            </div>
+
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  Are QR codes free to use?
+                </p>
+              </div>
+              <div class="productsectioner" id="productsectioner">
+                All of DingDoong’s QR Codes are free. Our small note: you won't
+                be able to modify the information, so always test and make sure
+                they work before printing.
+              </div>
+            </div>
+
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  Can QR codes be customized?
+                </p>
+              </div>
+              <div class="productsectioner" id="productsectioner">
+                Yes, QR codes can be customized with different colors, logos,
+                and designs to match your branding while still remaining
+                scannable.
+              </div>
+            </div>
+          </div>
+          <div class="contentfivermorethetwo-twosection">
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  How long do QR codes last?
+                </p>
+              </div>
+              <div class="productsectioner" id="productsectioner">
+                QR codes do not expire, and they can last indefinitely as long
+                as the printed code remains intact and scannable.
+              </div>
+            </div>
+
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  What are the benefits of using QR codes?
+                </p>
+              </div>
+              <div class="productsectioner" id="productsectioner">
+                QR codes offer quick access to information, enhance user
+                engagement, are easy to create and use, and can store a variety
+                of data types.
+              </div>
+            </div>
+
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  Do QR codes require an internet connection to work?
+                </p>
+              </div>
+              <div class="productsectioner" id="productsectioner">
+                QR codes themselves do not require an internet connection to be
+                scanned, but accessing the encoded information (like a website)
+                may require an internet connection.
+              </div>
+            </div>
+
+            <div class="contentonesection-write">
+              <div class="contentonesection-butru">
+                <p class="contentonesection-icon">&#62;</p>
+                <p class="contentonesection-container">
+                  How do I ensure my QR code is scannable?
+                </p>
+              </div>
+              <div class="productsectioner" id="productsectioner">
+                To ensure your QR code is scannable, use high contrast colors,
+                keep the design simple, avoid resizing too small, and test the
+                code with multiple devices before distribution.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-sixmoretime">
+        <div class="contentsixmoretime-onepebor">
+          <p class="onepebor">Free QR Code generator for high quality</p>
+        </div>
+        <div class="contentsixmoretime-twopebor">
+          <p class="twopebor">
+            Explore DingDoong's QR Code Generator: Packed with Incredible
+            Advantages!
+          </p>
+        </div>
+
+        <div class="contentsixmoretime-bapebor">
+          <div class="bapebor-images" id="imageWrapper">
+            <div class="image-group active">
+              <img src="/qrselector/img/qryoutobe.png" />
+              <img src="/qrselector/img/qrfacebook.png" />
+              <img src="/qrselector/img/qrvangkhe.png" />
+              <img src="/qrselector/img/qrconchim.png" />
+              <img src="/qrselector/img/qrcoconut.png" />
+            </div>
+
+            <div class="image-group">
+              <img src="/qrselector/img/qradc.png" />
+              <img src="/qrselector/img/qrmauhuon.png" />
+              <img src="/qrselector/img/qrnavatech.png" />
+              <img src="/qrselector/img/qr cafe.png" />
+              <img src="/qrselector/img/qrmountain.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="contentsixmoretime-bonpebor">
+          <div class="bonpebor-contanner">
+            <div class="bonpeborcontent-onetime">
+              <div class="bonpeborcontentone-vocuc">
+                <img src="/qrselector/img/qrrvocuc.png" />
+              </div>
+              <div class="bonpeborcontentone-container">
+                <p class="">Perpetual Use: Unlimited Scans</p>
+                <span class=""
+                  >DingDoong's QR Codes come with boundless possibilities.
+                  There's no expiration date, no limits on scans, and absolutely
+                  no charges or constraints.
+                </span>
+              </div>
+            </div>
+            <div class="bonpeborcontent-onetime">
+              <div class="bonpeborcontentone-vocuc">
+                <img src="/qrselector/img/qrrcusstomer.png" />
+              </div>
+              <div class="bonpeborcontentone-container">
+                <p class="">High-Resolution Excellence</p>
+                <span class=""
+                  >DingDoong's QR Codes: High-resolution for print. You're free
+                  to choose the pixel size and file type for your optimal
+                  quality.
+                </span>
+              </div>
+            </div>
+            <div class="bonpeborcontent-onetime">
+              <div class="bonpeborcontentone-vocuc">
+                <img src="/qrselector/img/qrrlike.png" />
+              </div>
+              <div class="bonpeborcontentone-container">
+                <p class="">Free for Commercial Use</p>
+                <span class=""
+                  >Enjoy our QR Codes for free! Use them however you like, even
+                  for commercial purposes.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="bonpebor-contanner">
+            <div class="bonpeborcontent-onetime">
+              <div class="bonpeborcontentone-vocuc">
+                <img src="/qrselector/img/qrrhousemoney.png" />
+              </div>
+              <div class="bonpeborcontentone-container">
+                <p class="">High-Resolution Excellence</p>
+                <span class=""
+                  >DingDoong's QR Codes: High-resolution for print. You're free
+                  to choose the pixel size and file type for your optimal
+                  quality.
+                </span>
+              </div>
+            </div>
+            <div class="bonpeborcontent-onetime">
+              <div class="bonpeborcontentone-vocuc">
+                <img src="/qrselector/img/qrrimage.png" />
+              </div>
+              <div class="bonpeborcontentone-container">
+                <p class="">Logo-Embedded QR Codes</p>
+                <span class=""
+                  >Personalize your QR Code with a brand for impact. It's easy
+                  and effective, keeping the QR Code readable.
+                </span>
+              </div>
+            </div>
+            <div class="bonpeborcontent-onetime">
+              <div class="bonpeborcontentone-vocuc">
+                <img src="/qrselector/img/qrrcheck.png" />
+              </div>
+              <div class="bonpeborcontentone-container">
+                <p class="">Secure Data Encryption</p>
+                <span class=""
+                  >Ensure privacy with DingDoong's Secure Data Encryption. It
+                  keeps your QR Code content confidential and secure.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-thendfinish">
+        <div class="thendfinish-container">
+          <p>What are the advantages of using a QR Code?</p>
+        </div>
+        <div class="thendfinish-containerdiection">
+          Explore how QR Codes positively impact your business, marketing, and
+          personal branding
+        </div>
+        <div class="thendfinish-containermution">
+          <div class="containermution-fontwirte">
+            <div class="fontwirte-container">
+              <div class="fine-dorgot">
+                <div class="fontwirte-business">Business</div>
+                <div class="fontwirte-iconness">&#62;</div>
+              </div>
+              <div class="prudoctionner">
+                <p class="">
+                  Drive engagement, simplify interactions, gather feedback and
+                  enhance marketing efforts seamlessly.
+                </p>
+              </div>
+            </div>
+            <div class="fontwirte-container">
+              <div class="fine-dorgot margketting">
+                <div class="fontwirte-business">Marketing</div>
+                <div class="fontwirte-iconness">&#62;</div>
+              </div>
+              <div class="prudoctionner">
+                <p class="">
+                  Elevate your marketing game. Scan on flyers, banners for quick
+                  info. Spark curiosity, drive more scans.
+                </p>
+              </div>
+            </div>
+            <div class="fontwirte-container">
+              <div class="fine-dorgot Freelancer">
+                <div class="fontwirte-business">Freelancer</div>
+                <div class="fontwirte-iconness">&#62;</div>
+              </div>
+              <div class="prudoctionner">
+                <p class="">
+                  Boost freelancing with QR Codes. Share portfolio, simplify
+                  contact, and attract clients seamlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="containermution-imagestime">
+            <div class="imagestime-contentsection">QR Codes used for</div>
+            <div class="imagestime-imgsection" id="imange-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
