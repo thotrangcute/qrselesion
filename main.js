@@ -178,7 +178,7 @@ function attachInputEvent() {
 
     if (!value) {
       if (errorDiv) errorDiv.textContent = "Please enter your URL!";
-      if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
+      if (aceImg) aceImg.src = "/qrselesion/img/qrto.png";
     } else {
       if (errorDiv) errorDiv.textContent = "";
 
@@ -189,13 +189,13 @@ function attachInputEvent() {
           imageCheckbox &&
           imageCheckbox.checked
         ) {
-          aceImg.src = "qrselesion/img/urlchec2.png";
+          aceImg.src = "/qrselesion/img/urlchec2.png";
         } else if (colorRadio && colorRadio.checked) {
-          aceImg.src = "qrselesion/img/urlcheck1.png";
+          aceImg.src = "/qrselesion/img/urlcheck1.png";
         } else if (imageCheckbox && imageCheckbox.checked) {
-          aceImg.src = "qrselesion/img/urlchec3.png";
+          aceImg.src = "/qrselesion/img/urlchec3.png";
         } else {
-          aceImg.src = "qrselesion/img/qr to đen.png";
+          aceImg.src = "/qrselesion/img/qr to đen.png";
         }
       }
     }
@@ -302,7 +302,7 @@ aechoaquyen.forEach((item) => {
 
         if (!value) {
           if (errorDiv) errorDiv.textContent = "Please enter your FACEBOOK!";
-          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
+          if (aceImg) aceImg.src = "/qrselesion/img/qrto.png";
         } else {
           if (errorDiv) errorDiv.textContent = "";
 
@@ -313,13 +313,13 @@ aechoaquyen.forEach((item) => {
               imageCheckbox &&
               imageCheckbox.checked
             ) {
-              aceImg.src = "qrselesion/img/urlchec2.png";
+              aceImg.src = "/qrselesion/img/urlchec2.png";
             } else if (colorRadio && colorRadio.checked) {
-              aceImg.src = "qrselesion/img/urlcheck1.png";
+              aceImg.src = "/qrselesion/img/urlcheck1.png";
             } else if (imageCheckbox && imageCheckbox.checked) {
-              aceImg.src = "qrselesion/img/urlchec3.png";
+              aceImg.src = "/qrselesion/img/urlchec3.png";
             } else {
-              aceImg.src = "qrselesion/img/qr to đen.png";
+              aceImg.src = "/qrselesion/img/qr to đen.png";
             }
           }
         }
@@ -1210,7 +1210,7 @@ aceoneVcard.forEach((item) => {
         if (!value) {
           if (errorDiv) errorDiv.textContent = "Please enter your!";
           if (errorSection) errorSection.textContent = "Please enter your!";
-          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
+          if (aceImg) aceImg.src = "/qrselesion/img/qrto.png";
           return;
         }
 
@@ -1218,7 +1218,7 @@ aceoneVcard.forEach((item) => {
           if (errorDiv) errorDiv.textContent = "Please enter a valid email!";
           if (errorSection)
             errorSection.textContent = "Please enter a valid email!";
-          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
+          if (aceImg) aceImg.src = "/qrselesion/img/qrto.png";
           return;
         }
 
@@ -1227,13 +1227,13 @@ aceoneVcard.forEach((item) => {
 
         if (aceImg) {
           if (colorRadio?.checked && imageCheckbox?.checked) {
-            aceImg.src = "qrselesion/img/cardcheck2.png";
+            aceImg.src = "/qrselesion/img/cardcheck2.png";
           } else if (colorRadio?.checked) {
-            aceImg.src = "qrselesion/img/cardcheck1.png";
+            aceImg.src = "/qrselesion/img/cardcheck1.png";
           } else if (imageCheckbox?.checked) {
-            aceImg.src = "qrselesion/img/cardcheck3.png";
+            aceImg.src = "/qrselesion/img/cardcheck3.png";
           } else {
-            aceImg.src = "qrselesion/img/qrVcard.png";
+            aceImg.src = "/qrselesion/img/qrVcard.png";
           }
         }
       });
@@ -1355,7 +1355,7 @@ aceoneggreview.forEach((item) => {
         if (!value) {
           if (errorDiv)
             errorDiv.textContent = "Please enter your google review!";
-          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
+          if (aceImg) aceImg.src = "/qrselesion/img/qrto.png";
         } else {
           if (errorDiv) errorDiv.textContent = "";
 
@@ -1366,13 +1366,13 @@ aceoneggreview.forEach((item) => {
               imageCheckbox &&
               imageCheckbox.checked
             ) {
-              aceImg.src = "qrselesion/img/urlchec2.png";
+              aceImg.src = "/qrselesion/img/urlchec2.png";
             } else if (colorRadio && colorRadio.checked) {
-              aceImg.src = "qrselesion/img/urlcheck1.png";
+              aceImg.src = "/qrselesion/img/urlcheck1.png";
             } else if (imageCheckbox && imageCheckbox.checked) {
-              aceImg.src = "qrselesion/img/urlchec3.png";
+              aceImg.src = "/qrselesion/img/urlchec3.png";
             } else {
-              aceImg.src = "qrselesion/img/qr to đen.png";
+              aceImg.src = "/qrselesion/img/qr to đen.png";
             }
           }
         }
