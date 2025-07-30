@@ -436,6 +436,7 @@ contentmore.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(contentmore);
 aeconeEmail.click(function () {
   listDivion.html(`
 <div class="content">
@@ -553,6 +554,7 @@ aceonephone.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(aceonephone);
 contentmore.click(function (e) {
   const isVisible = listDivion.css("display", "block");
   const icon = $(this).find(".onemore-iconmomen");
@@ -560,6 +562,8 @@ contentmore.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(contentmore);
+
 aceonephone.click(function () {
   listDivion.html(`
 <div class="content">
@@ -580,6 +584,7 @@ aceonephone.click(function () {
       }
     }
   });
+  console.log(aceonephone);
 });
 /*
 const aceonephone = document.querySelectorAll(".aceonephone");
@@ -650,6 +655,8 @@ locationcontent.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(locationcontent);
+
 contentmore.click(function (e) {
   const isVisible = listDivion.css("display", "block");
   const icon = $(this).find(".onemore-iconmomen");
@@ -657,6 +664,8 @@ contentmore.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(contentmore);
+
 locationcontent.click(function () {
   listDivion.html(`
 <div class="content">
@@ -699,6 +708,7 @@ Longitude</p>
       }
     }
   });
+  console.log(locationcontent);
 });
 
 /*
@@ -794,6 +804,8 @@ aceoneWifi.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(aceoneWifi);
+
 contentmore.click(function (e) {
   const isVisible = listDivion.css("display", "block");
   const icon = $(this).find(".onemore-iconmomen");
@@ -801,6 +813,8 @@ contentmore.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(contentmore);
+
 aceoneWifi.click(function () {
   listDivion.html(`
  <div class="contention">
@@ -874,6 +888,7 @@ aceoneWifi.click(function () {
     $productionSections.removeClass("active");
     $(this).addClass("active");
   });
+  console.log(aceoneWifi);
 });
 
 /*
@@ -1000,6 +1015,8 @@ aceoneVcard.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(aceoneVcard);
+
 contentmore.click(function (e) {
   const isVisible = listDivion.css("display", "block");
   const icon = $(this).find(".onemore-iconmomen");
@@ -1007,6 +1024,8 @@ contentmore.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(contentmore);
+
 aceoneVcard.click(function () {
   listDivion.html(`
 <div class="contention">
@@ -1094,6 +1113,7 @@ aceoneVcard.click(function () {
       }
     }
   });
+  console.log(aceoneVcard);
 });
 
 /*
@@ -1232,6 +1252,8 @@ aceoneggreview.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(aceoneggreview);
+
 contentmore.click(function (e) {
   const isVisible = listDivion.css("display", "block");
   const icon = $(this).find(".onemore-iconmomen");
@@ -1239,6 +1261,8 @@ contentmore.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(contentmore);
+
 aceoneggreview.click(function () {
   listDivion.html(`
 <div class="content">
@@ -1277,6 +1301,7 @@ aceoneggreview.click(function () {
       }
     }
   });
+  console.log(aceoneggreview);
 });
 
 /*
@@ -1363,6 +1388,7 @@ $(document).ready(function () {
       $(this).addClass("active");
     }
   });
+  console.log($(".sabothammuu"));
 });
 
 $(".contentner-write").on("click", function () {
@@ -1544,6 +1570,7 @@ aceimages.click(function () {
       overlaydis.css("display", "flex");
     }
   }
+  console.log(aceimages);
 });
 
 const overlay = $("#overlaydis");
@@ -1654,6 +1681,7 @@ fontwirtecontainer.each(function () {
       e.stopPropagation();
     });
   }
+  console.log(fontwirtecontainer);
 });
 
 console.log($(".fontwirte-container"));
