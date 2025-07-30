@@ -178,7 +178,7 @@ function attachInputEvent() {
 
     if (!value) {
       if (errorDiv) errorDiv.textContent = "Please enter your URL!";
-      if (aceImg) aceImg.src = "/qrselesion/img/qrto.png";
+      if (aceImg) aceImg.src = "/img/qrto.png";
     } else {
       if (errorDiv) errorDiv.textContent = "";
 
@@ -189,13 +189,13 @@ function attachInputEvent() {
           imageCheckbox &&
           imageCheckbox.checked
         ) {
-          aceImg.src = "/qrselesion/img/urlchec2.png";
+          aceImg.src = "/img/urlchec2.png";
         } else if (colorRadio && colorRadio.checked) {
-          aceImg.src = "/qrselesion/img/urlcheck1.png";
+          aceImg.src = "/img/urlcheck1.png";
         } else if (imageCheckbox && imageCheckbox.checked) {
-          aceImg.src = "/qrselesion/img/urlchec3.png";
+          aceImg.src = "/img/urlchec3.png";
         } else {
-          aceImg.src = "/qrselesion/img/qr to đen.png";
+          aceImg.src = "/img/qr to đen.png";
         }
       }
     }
