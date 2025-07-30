@@ -36,7 +36,7 @@ $(document).ready(function () {
   console.log(slider);
 });
 /* url*/
-
+/*
 const items = $(".sabothammuu");
 const listDiv = $("#contentierList");
 const contentOne = $("#conternierOne");
@@ -104,7 +104,7 @@ function attachInputEvent() {
     }
   });
 }
-/*
+  */
 
 const items = document.querySelectorAll(".sabothammuu");
 const listDiv = document.getElementById("contentierList");
@@ -201,9 +201,9 @@ function attachInputEvent() {
     }
   });
 }
-  */
-/* facebook */
 
+/* facebook */
+/*
 const aechoaquyen = $(".acehoaquyen");
 const listDivion = $("#contentierList");
 
@@ -262,7 +262,8 @@ aechoaquyen.on("click", function (e) {
   listDivion.css("display", "block");
 });
 console.log(aechoaquyen);
-/*
+*/
+
 const aechoaquyen = document.querySelectorAll(".acehoaquyen");
 const listDivion = document.getElementById("contentierList");
 contentmore.forEach(function (item) {
@@ -342,7 +343,7 @@ aechoaquyen.forEach(function (item) {
   console.log(aechoaquyen);
 });
 /* text */
-
+/*
 const aecfiveText = $(".aecfiveText");
 aecfiveText.click(function (e) {
   const isVisible = listDivion.is(":visible");
@@ -373,8 +374,8 @@ aecfiveText.click(function () {
 `);
   console.log(aecfiveText);
 });
+*/
 
-/*
 const aecfiveText = document.querySelectorAll(".aecfiveText");
 aecfiveText.forEach(function (item) {
   item.addEventListener("click", function (e) {
@@ -416,7 +417,7 @@ aecfiveText.forEach((item) => {
 });
 
 /* email */
-
+/*
 const aeconeEmail = $(".aeconeEmail");
 aeconeEmail.click(function (e) {
   const isVisible = listDivion.is(":visible");
@@ -469,8 +470,7 @@ aeconeEmail.click(function () {
     }
   });
 });
-
-/*
+*/
 
 const aeconeEmail = document.querySelectorAll(".aeconeEmail");
 
@@ -540,9 +540,9 @@ aeconeEmail.forEach((item) => {
   });
   console.log(aeconeEmail);
 });
-*/
-/* iphone*/
 
+/* iphone*/
+/*
 const aceonephone = $(".aceonephone");
 aceonephone.click(function (e) {
   const isVisible = listDivion.is(":visible");
@@ -586,7 +586,7 @@ aceonephone.click(function () {
   });
   console.log(aceonephone);
 });
-/*
+*/
 const aceonephone = document.querySelectorAll(".aceonephone");
 
 aceonephone.forEach(function (item) {
@@ -643,9 +643,9 @@ aceonephone.forEach((item) => {
   });
   console.log(aceonephone);
 });
-*/
-/*location*/
 
+/*location*/
+/*
 const locationcontent = $(".locationcontent");
 locationcontent.click(function (e) {
   const isVisible = listDivion.is(":visible");
@@ -710,8 +710,8 @@ Longitude</p>
   });
   console.log(locationcontent);
 });
+*/
 
-/*
 const locationcontent = document.querySelectorAll(".locationcontent");
 locationcontent.forEach(function (item) {
   item.addEventListener("click", function (e) {
@@ -792,9 +792,9 @@ Longitude</p>
   });
   console.log(locationcontent);
 });
-*/
-/* wifi */
 
+/* wifi */
+/*
 const aceoneWifi = $(".aceoneWifi");
 aceoneWifi.click(function (e) {
   const isVisible = listDivion.is(":visible");
@@ -890,8 +890,8 @@ aceoneWifi.click(function () {
   });
   console.log(aceoneWifi);
 });
+*/
 
-/*
 const aceoneWifi = document.querySelectorAll(".aceoneWifi");
 aceoneWifi.forEach(function (item) {
   item.addEventListener("click", function (e) {
@@ -1003,9 +1003,9 @@ aceoneWifi.forEach((item) => {
     });
   });
 });
-*/
-/* vcard*/
 
+/* vcard*/
+/*
 const aceoneVcard = $(".aceoneVcard");
 aceoneVcard.click(function (e) {
   const isVisible = listDivion.is(":visible");
@@ -1115,8 +1115,8 @@ aceoneVcard.click(function () {
   });
   console.log(aceoneVcard);
 });
+*/
 
-/*
 const aceoneVcard = document.querySelectorAll(".aceoneVcard");
 aceoneVcard.forEach(function (item) {
   item.addEventListener("click", function (e) {
@@ -1240,9 +1240,9 @@ aceoneVcard.forEach((item) => {
     });
   });
 });
-*/
-/* aceoneggreview*/
 
+/* aceoneggreview*/
+/*
 const aceoneggreview = $(".aceoneggreview");
 aceoneggreview.click(function (e) {
   const isVisible = listDivion.is(":visible");
@@ -1303,8 +1303,8 @@ aceoneggreview.click(function () {
   });
   console.log(aceoneggreview);
 });
+*/
 
-/*
 const aceoneggreview = document.querySelectorAll(".aceoneggreview");
 aceoneggreview.forEach(function (item) {
   item.addEventListener("click", function (e) {
@@ -1380,7 +1380,7 @@ aceoneggreview.forEach((item) => {
     });
   });
 });
-*/
+
 $(document).ready(function () {
   $(".sabothammuu").each(function () {
     const text = $(this).find(".contentner-write").text().trim();
