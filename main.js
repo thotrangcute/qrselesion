@@ -61,6 +61,7 @@ contentmore.click(function (e) {
   $(this).addClass("active");
   e.stopPropagation();
 });
+console.log(contentmore);
 items.click(function (e) {
   const isVisible = listDiv.css("display", "block");
 
@@ -71,6 +72,7 @@ items.click(function (e) {
   listDiv.html(defaultContent);
   e.stopPropagation();
 });
+console.log(items);
 function attachInputEvent() {
   const input = $(".content-input");
   const aceImg = $(".ace-images");
@@ -211,7 +213,7 @@ contentmore.click(function (e) {
   icon.html(isVisible ? "&#8744;" : "&#8743;");
   listDivion.css("display", "block");
 });
-
+console.log(contentmore);
 aechoaquyen.click(function () {
   listDivion.html(`
 <div class="contentiton">
@@ -259,6 +261,7 @@ aechoaquyen.on("click", function (e) {
   icon.html(isVisible ? "&#8744;" : "&#8743;");
   listDivion.css("display", "block");
 });
+console.log(aechoaquyen);
 /*
 const aechoaquyen = document.querySelectorAll(".acehoaquyen");
 const listDivion = document.getElementById("contentierList");
@@ -351,6 +354,7 @@ aecfiveText.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(aecfiveText);
 contentmore.click(function (e) {
   const isVisible = listDivion.css("display", "block");
   const icon = $(this).find(".onemore-iconmomen");
@@ -358,6 +362,7 @@ contentmore.click(function (e) {
   listDivion.css("display", "block");
   e.stopPropagation();
 });
+console.log(contentmore);
 aecfiveText.click(function () {
   listDivion.html(`
 <div class="content">
@@ -366,6 +371,7 @@ aecfiveText.click(function () {
     <p class="content-aceptexxt"> Line breaks are allowed</p>
 </div>
 `);
+  console.log(aecfiveText);
 });
 
 /*
