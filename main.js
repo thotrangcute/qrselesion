@@ -87,18 +87,18 @@ function attachInputEvent() {
     const errorDiv = $(this).siblings(".error-input");
     if (!value) {
       errorDiv.text("please enter your url");
-      aceImg.attr("src", "/img/qrto.png");
+      aceImg.attr("src", "/qrselesion/img/qrto.png");
     } else {
       errorDiv.text("");
       if (aceImg.length) {
         if (colorRadio.prop("checked") && imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "/img/urlchec2.png");
+          aceImg.attr("src", "/qrselesion/img/urlchec2.png");
         } else if (colorRadio.prop("checked")) {
-          aceImg.attr("src", "/img/urlcheck1.png");
+          aceImg.attr("src", "/qrselesion/img/urlcheck1.png");
         } else if (imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "/img/urlchec3.png");
+          aceImg.attr("src", "/qrselesion/img/urlchec3.png");
         } else {
-          aceImg.attr("src", "/img/qr to đen.png");
+          aceImg.attr("src", "/qrselesion/img/qr to đen.png");
         }
       }
     }
@@ -235,18 +235,18 @@ aechoaquyen.click(function () {
     const errorDiv = $(this).siblings(".error-input");
     if (!value) {
       errorDiv.text("please enter your FACEBOOK!");
-      aecImg.attr("src", "/img/qrto.png");
+      aecImg.attr("src", "/qrselesion/img/qrto.png");
     } else {
       errorDiv.text("");
       if (aceImg.length) {
         if (colorRadio.prop("checked") && imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "/img/urlchec2.png");
+          aceImg.attr("src", "/qrselesion/img/urlchec2.png");
         } else if (colorRadio.prop("checked")) {
-          aceImg.attr("src", "/img/urlcheck1.png");
+          aceImg.attr("src", "/qrselesion/img/urlcheck1.png");
         } else if (imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "/img/urlchec3.png");
+          aceImg.attr("src", "/qrselesion/img/urlchec3.png");
         } else {
-          aceImg.attr("src", "/img/qr to đen.png");
+          aceImg.attr("src", "/qrselesion/img/qr to đen.png");
         }
       }
     }
@@ -1103,13 +1103,13 @@ aceoneVcard.click(function () {
       const isImageChecked = imageCheckbox.prop("checked");
 
       if (isColorChecked && isImageChecked) {
-        aceImg.attr("src", "/img/cardcheck2.png");
+        aceImg.attr("src", "/qrselesion/img/cardcheck2.png");
       } else if (isColorChecked) {
-        aceImg.attr("src", "/img/cardcheck1.png");
+        aceImg.attr("src", "/qrselesion/img/cardcheck1.png");
       } else if (isImageChecked) {
-        aceImg.attr("src", "/img/cardcheck3.png");
+        aceImg.attr("src", "/qrselesion/img/cardcheck3.png");
       } else {
-        aceImg.attr("src", "/img/qrVcard.png");
+        aceImg.attr("src", "/qrselesion/img/qrVcard.png");
       }
     }
   });
@@ -1599,7 +1599,7 @@ saboWrite.forEach(function (element) {
 const saboWrite = $(".sabo-write");
 saboWrite.click(function () {
   const aceImg = $(".ace-images");
-  aceImg.attr("src", "/img/qrto.png");
+  aceImg.attr("src", "/qrselesion/img/qrto.png");
 });
 
 /* Frequently Asked Questions */
