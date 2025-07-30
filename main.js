@@ -87,7 +87,7 @@ function attachInputEvent() {
     const errorDiv = $(this).siblings(".error-input");
     if (!value) {
       errorDiv.text("please enter your url");
-      aceImg.attr("src", "/img/qr to.png");
+      aceImg.attr("src", "/img/qrto.png");
     } else {
       errorDiv.text("");
       if (aceImg.length) {
@@ -235,7 +235,7 @@ aechoaquyen.click(function () {
     const errorDiv = $(this).siblings(".error-input");
     if (!value) {
       errorDiv.text("please enter your FACEBOOK!");
-      aecImg.attr("src", "/img/qr to.png");
+      aecImg.attr("src", "/img/qrto.png");
     } else {
       errorDiv.text("");
       if (aceImg.length) {
@@ -1086,12 +1086,12 @@ aceoneVcard.click(function () {
     if (!value) {
       errorDiv.text("please enter your");
       errorSection.text("Please enter your!");
-      aceImg.attr("src", "/qrselesion/img/qr to.png");
+      aceImg.attr("src", "/qrselesion/img/qrto.png");
     }
     if (isEmailField && !isEmailValid) {
       if (errorDiv.length) errorDiv.text("Please enter a valid email!");
       if (errorSection.length) errorSection.text("Please enter a valid email!");
-      if (aceImg.length) aceImg.attr("src", "/qrselesion/img/qr to.png");
+      if (aceImg.length) aceImg.attr("src", "/qrselesion/img/qrto.png");
       return;
     }
 
@@ -1283,7 +1283,7 @@ aceoneggreview.click(function () {
       const errorDiv = $(this).siblings(".error-input");
       if (!value) {
         errorDiv.text("Please enter your google review!");
-        aceImg.attr("src", "img.qr to.png");
+        aceImg.attr("src", "img.qrto.png");
       } else {
         errorDiv.text("");
 
@@ -1599,7 +1599,7 @@ saboWrite.forEach(function (element) {
 const saboWrite = $(".sabo-write");
 saboWrite.click(function () {
   const aceImg = $(".ace-images");
-  aceImg.attr("src", "/img/qr to.png");
+  aceImg.attr("src", "/img/qrto.png");
 });
 
 /* Frequently Asked Questions */
