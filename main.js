@@ -87,18 +87,18 @@ function attachInputEvent() {
     const errorDiv = $(this).siblings(".error-input");
     if (!value) {
       errorDiv.text("please enter your url");
-      aceImg.attr("src", "/qrselector/img/qr to.png");
+      aceImg.attr("src", "/qrselesion/img/qr to.png");
     } else {
       errorDiv.text("");
       if (aceImg.length) {
         if (colorRadio.prop("checked") && imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "qrselector/img/urlchec2.png");
+          aceImg.attr("src", "qrselesion/img/urlchec2.png");
         } else if (colorRadio.prop("checked")) {
-          aceImg.attr("src", "qrselector/img/urlcheck1.png");
+          aceImg.attr("src", "qrselesion/img/urlcheck1.png");
         } else if (imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "qrselector/img/urlchec3.png");
+          aceImg.attr("src", "qrselesion/img/urlchec3.png");
         } else {
-          aceImg.attr("src", "qrselector/img/qr to đen.png ");
+          aceImg.attr("src", "qrselesion/img/qr to đen.png ");
         }
       }
     }
@@ -178,7 +178,7 @@ function attachInputEvent() {
 
     if (!value) {
       if (errorDiv) errorDiv.textContent = "Please enter your URL!";
-      if (aceImg) aceImg.src = "qrselector/img/qrto.png";
+      if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
     } else {
       if (errorDiv) errorDiv.textContent = "";
 
@@ -189,13 +189,13 @@ function attachInputEvent() {
           imageCheckbox &&
           imageCheckbox.checked
         ) {
-          aceImg.src = "qrselector/img/urlchec2.png";
+          aceImg.src = "qrselesion/img/urlchec2.png";
         } else if (colorRadio && colorRadio.checked) {
-          aceImg.src = "qrselector/img/urlcheck1.png";
+          aceImg.src = "qrselesion/img/urlcheck1.png";
         } else if (imageCheckbox && imageCheckbox.checked) {
-          aceImg.src = "qrselector/img/urlchec3.png";
+          aceImg.src = "qrselesion/img/urlchec3.png";
         } else {
-          aceImg.src = "qrselector/img/qr to đen.png";
+          aceImg.src = "qrselesion/img/qr to đen.png";
         }
       }
     }
@@ -235,18 +235,18 @@ aechoaquyen.click(function () {
     const errorDiv = $(this).siblings(".error-input");
     if (!value) {
       errorDiv.text("please enter your FACEBOOK!");
-      aecImg.attr("src", "qrselector/img/qr to.png");
+      aecImg.attr("src", "qrselesion/img/qr to.png");
     } else {
       errorDiv.text("");
       if (aceImg.length) {
         if (colorRadio.prop("checked") && imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "qrselector/img/urlchec2.png");
+          aceImg.attr("src", "qrselesion/img/urlchec2.png");
         } else if (colorRadio.prop("checked")) {
-          aceImg.attr("src", "qrselector/img/urlcheck1.png");
+          aceImg.attr("src", "qrselesion/img/urlcheck1.png");
         } else if (imageCheckbox.prop("checked")) {
-          aceImg.attr("src", "qrselector/img/urlchec3.png");
+          aceImg.attr("src", "qrselesion/img/urlchec3.png");
         } else {
-          aceImg.attr("src", "qrselector/img/qr to đen.png ");
+          aceImg.attr("src", "qrselesion/img/qr to đen.png ");
         }
       }
     }
@@ -301,7 +301,7 @@ aechoaquyen.forEach((item) => {
 
         if (!value) {
           if (errorDiv) errorDiv.textContent = "Please enter your FACEBOOK!";
-          if (aceImg) aceImg.src = "qrselector/img/qrto.png";
+          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
         } else {
           if (errorDiv) errorDiv.textContent = "";
 
@@ -312,13 +312,13 @@ aechoaquyen.forEach((item) => {
               imageCheckbox &&
               imageCheckbox.checked
             ) {
-              aceImg.src = "qrselector/img/urlchec2.png";
+              aceImg.src = "qrselesion/img/urlchec2.png";
             } else if (colorRadio && colorRadio.checked) {
-              aceImg.src = "qrselector/img/urlcheck1.png";
+              aceImg.src = "qrselesion/img/urlcheck1.png";
             } else if (imageCheckbox && imageCheckbox.checked) {
-              aceImg.src = "qrselector/img/urlchec3.png";
+              aceImg.src = "qrselesion/img/urlchec3.png";
             } else {
-              aceImg.src = "qrselector/img/qr to đen.png";
+              aceImg.src = "qrselesion/img/qr to đen.png";
             }
           }
         }
@@ -1086,12 +1086,12 @@ aceoneVcard.click(function () {
     if (!value) {
       errorDiv.text("please enter your");
       errorSection.text("Please enter your!");
-      aceImg.attr("src", "qrselector/img/qr to.png");
+      aceImg.attr("src", "qrselesion/img/qr to.png");
     }
     if (isEmailField && !isEmailValid) {
       if (errorDiv.length) errorDiv.text("Please enter a valid email!");
       if (errorSection.length) errorSection.text("Please enter a valid email!");
-      if (aceImg.length) aceImg.attr("src", "qrselector/img/qr to.png");
+      if (aceImg.length) aceImg.attr("src", "qrselesion/img/qr to.png");
       return;
     }
 
@@ -1103,13 +1103,13 @@ aceoneVcard.click(function () {
       const isImageChecked = imageCheckbox.prop("checked");
 
       if (isColorChecked && isImageChecked) {
-        aceImg.attr("src", "qrselector/img/cardcheck2.png");
+        aceImg.attr("src", "qrselesion/img/cardcheck2.png");
       } else if (isColorChecked) {
-        aceImg.attr("src", "qrselector/img/cardcheck1.png");
+        aceImg.attr("src", "qrselesion/img/cardcheck1.png");
       } else if (isImageChecked) {
-        aceImg.attr("src", "qrselector/img/cardcheck3.png");
+        aceImg.attr("src", "qrselesion/img/cardcheck3.png");
       } else {
-        aceImg.attr("src", "qrselector/img/qrVcard.png");
+        aceImg.attr("src", "qrselesion/img/qrVcard.png");
       }
     }
   });
@@ -1210,7 +1210,7 @@ aceoneVcard.forEach((item) => {
         if (!value) {
           if (errorDiv) errorDiv.textContent = "Please enter your!";
           if (errorSection) errorSection.textContent = "Please enter your!";
-          if (aceImg) aceImg.src = "qrselector/img/qrto.png";
+          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
           return;
         }
 
@@ -1218,7 +1218,7 @@ aceoneVcard.forEach((item) => {
           if (errorDiv) errorDiv.textContent = "Please enter a valid email!";
           if (errorSection)
             errorSection.textContent = "Please enter a valid email!";
-          if (aceImg) aceImg.src = "qrselector/img/qrto.png";
+          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
           return;
         }
 
@@ -1227,13 +1227,13 @@ aceoneVcard.forEach((item) => {
 
         if (aceImg) {
           if (colorRadio?.checked && imageCheckbox?.checked) {
-            aceImg.src = "qrselector/img/cardcheck2.png";
+            aceImg.src = "qrselesion/img/cardcheck2.png";
           } else if (colorRadio?.checked) {
-            aceImg.src = "qrselector/img/cardcheck1.png";
+            aceImg.src = "qrselesion/img/cardcheck1.png";
           } else if (imageCheckbox?.checked) {
-            aceImg.src = "qrselector/img/cardcheck3.png";
+            aceImg.src = "qrselesion/img/cardcheck3.png";
           } else {
-            aceImg.src = "qrselector/img/qrVcard.png";
+            aceImg.src = "qrselesion/img/qrVcard.png";
           }
         }
       });
@@ -1289,13 +1289,13 @@ aceoneggreview.click(function () {
 
         if (aceImg.length) {
           if (colorRadio.prop("checked") && imageCheckbox.prop("checked")) {
-            aceImg.attr("src", "qrselector/img/urlchec2.png");
+            aceImg.attr("src", "qrselesion/img/urlchec2.png");
           } else if (colorRadio.prop("checked")) {
-            aceImg.attr("src", "qrselector/img/urlchec1.png");
+            aceImg.attr("src", "qrselesion/img/urlchec1.png");
           } else if (imageCheckbox.prop("checked")) {
-            aceImg.attr("src", "qrselector/img/urlchec3.png");
+            aceImg.attr("src", "qrselesion/img/urlchec3.png");
           } else {
-            aceImg.attr("src", "qrselector/img/qr to đen.png ");
+            aceImg.attr("src", "qrselesion/img/qr to đen.png ");
           }
         }
       }
@@ -1355,7 +1355,7 @@ aceoneggreview.forEach((item) => {
         if (!value) {
           if (errorDiv)
             errorDiv.textContent = "Please enter your google review!";
-          if (aceImg) aceImg.src = "qrselector/img/qrto.png";
+          if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
         } else {
           if (errorDiv) errorDiv.textContent = "";
 
@@ -1366,13 +1366,13 @@ aceoneggreview.forEach((item) => {
               imageCheckbox &&
               imageCheckbox.checked
             ) {
-              aceImg.src = "qrselector/img/urlchec2.png";
+              aceImg.src = "qrselesion/img/urlchec2.png";
             } else if (colorRadio && colorRadio.checked) {
-              aceImg.src = "qrselector/img/urlcheck1.png";
+              aceImg.src = "qrselesion/img/urlcheck1.png";
             } else if (imageCheckbox && imageCheckbox.checked) {
-              aceImg.src = "qrselector/img/urlchec3.png";
+              aceImg.src = "qrselesion/img/urlchec3.png";
             } else {
-              aceImg.src = "qrselector/img/qr to đen.png";
+              aceImg.src = "qrselesion/img/qr to đen.png";
             }
           }
         }
@@ -1591,7 +1591,7 @@ const saboWrite = document.querySelectorAll(".sabo-write");
 saboWrite.forEach(function (element) {
   element.addEventListener("click", function () {
     const aceImg = document.querySelector(".ace-images");
-    if (aceImg) aceImg.src = "qrselector/img/qrto.png";
+    if (aceImg) aceImg.src = "qrselesion/img/qrto.png";
   });
 });
 */
@@ -1599,7 +1599,7 @@ saboWrite.forEach(function (element) {
 const saboWrite = $(".sabo-write");
 saboWrite.click(function () {
   const aceImg = $(".ace-images");
-  aceImg.attr("src", "qrselector/img/qr to.png");
+  aceImg.attr("src", "qrselesion/img/qr to.png");
 });
 
 /* Frequently Asked Questions */
@@ -1728,35 +1728,35 @@ business.on("click", function (e) {
   imangecontent.html(`
      <div class="contentnis" >
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-1.png" />
+            <img src="/qrselesion/img/end-1.png" />
             <p class="listimg-content">Online shopping</p>
           </div>
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-2.png" />
+            <img src="/qrselesion/img/end-2.png" />
             <p class="listimg-content">Online ordering</p>
           </div>
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-3.png" />
+            <img src="/qrselesion/img/end-3.png" />
             <p class="listimg-content">Accessing product info</p>
           </div>
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-4.png" />
+            <img src="/qrselesion/img/end-4.png" />
             <p class="listimg-content">Connecting social media</p>
           </div>
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-5.png" />
+            <img src="/qrselesion/img/end-5.png" />
             <p class="listimg-content">Doing payment</p>
           </div>
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-6.png" />
+            <img src="/qrselesion/img/end-6.png" />
             <p class="listimg-content">Connecting WiFi</p>
           </div>
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-7.png" />
+            <img src="/qrselesion/img/end-7.png" />
             <p class="listimg-content">Sharing feedback</p>
           </div>
           <div class="imgsection-listimg">
-            <img src="/qrselector/img/end-8.png" />
+            <img src="/qrselesion/img/end-8.png" />
             <p class="listimg-content">Downloading the app</p>
           </div>
         </div>
@@ -1773,15 +1773,15 @@ margketting.on("click", function (e) {
     <div class="contentnis">
   <div class="content-first">
     <div class="imgsection-listimgner">
-      <img src="/qrselector/img/marketting-1.png" />
-      <img src="/qrselector/img/marketting-.png" />
+      <img src="/qrselesion/img/marketting-1.png" />
+      <img src="/qrselesion/img/marketting-.png" />
     </div>
     <div class="listimg-content">Promoting sales, events on Posters</div>
   </div>
   <div class="content-first">
     <div class="imgsection-listimgner">
-      <img  src="/qrselector/img/markettin-3.png" />
-      <img src="/qrselector/img/marketting-4.png" />
+      <img  src="/qrselesion/img/markettin-3.png" />
+      <img src="/qrselesion/img/marketting-4.png" />
     </div>
     <div class="listimg-content">
       Promoting products, services on Flyers, Brochures
@@ -1789,8 +1789,8 @@ margketting.on("click", function (e) {
   </div>
   <div class="content-first">
     <div class="imgsection-listimgner">
-      <img src="/qrselector/img/marketing-5.png" />
-      <img src="/qrselector/img/markrtting06.png" />
+      <img src="/qrselesion/img/marketing-5.png" />
+      <img src="/qrselesion/img/markrtting06.png" />
     </div>
     <div class="listimg-content">Promoting services on Sandwich boards</div>
    < /div>
@@ -1809,13 +1809,13 @@ Freelancer.on("click", function (e) {
     <div class="contentnis">
   <div class="content-first">
     <div class="imgsection-listimgner">
-      <img src="/qrselector/img/freelan-1.png" />
-      <img src="/qrselector/img/freelan-2.png" />
+      <img src="/qrselesion/img/freelan-1.png" />
+      <img src="/qrselesion/img/freelan-2.png" />
     </div>
   </div>
   <div class="content-first">
     <div class="imgsection-listimgner">
-      <img class="first-imaeges" src="/qrselector/img/freelan-3.png" />
+      <img class="first-imaeges" src="/qrselesion/img/freelan-3.png" />
     </div>
     <div class="listimg-content">
       Promoting products, services on Flyers, Brochures
@@ -1823,8 +1823,8 @@ Freelancer.on("click", function (e) {
   </div>
   <div class="content-first">
     <div class="imgsection-listimgner">
-      <img src="/qrselector/img/freelan-4.png" />
-      <img src="/qrselector/img/freelan-5.png" />
+      <img src="/qrselesion/img/freelan-4.png" />
+      <img src="/qrselesion/img/freelan-5.png" />
     </div>
     <div class="listimg-content">Promoting services on Sandwich boards</div>
   </div>
@@ -1847,19 +1847,19 @@ swapIcon.forEach(function (item) {
     if (imageCheckbox && imageCheckbox.checked) {
       const currentSrc = aceImg.getAttribute("src");
       if (currentSrc.includes("3mauso02.png")) {
-        aceImg.setAttribute("src", "qrselector/img/3mauso01.png");
+        aceImg.setAttribute("src", "qrselesion/img/3mauso01.png");
       } else {
-        aceImg.setAttribute("src", "qrselector/img/3mauso02.png");
+        aceImg.setAttribute("src", "qrselesion/img/3mauso02.png");
       }
     } else if (colorRadio && colorRadio.checked) {
       const currentSrc = aceImg.getAttribute("src");
       if (currentSrc.includes("prsection1.png")) {
-        aceImg.setAttribute("src", "qrselector/img/prsection2.png");
+        aceImg.setAttribute("src", "qrselesion/img/prsection2.png");
       } else {
-        aceImg.setAttribute("src", "qrselector/img/prsection1.png");
+        aceImg.setAttribute("src", "qrselesion/img/prsection1.png");
       }
     } else if (gradiention === "Linear gradient") {
-      aceImg.src = "qrselector/img/b01.png";
+      aceImg.src = "qrselesion/img/b01.png";
     }
     const color1 = document.getElementById("color1");
     const color2 = document.getElementById("color2");
@@ -1889,19 +1889,19 @@ swapIcon.click(function () {
   if (imageCheckbox.prop("checked")) {
     const currentSrc = aceImg.attr("src");
     if (currentSrc.includes("3mauso02.png")) {
-      aceImg.attr("src", "/qrselector/img/3mauso01.png");
+      aceImg.attr("src", "/qrselesion/img/3mauso01.png");
     } else {
-      aceImg.attr("src", "/qrselector/img/3mauso02.png");
+      aceImg.attr("src", "/qrselesion/img/3mauso02.png");
     }
   } else if (colorRadio.prop("checked")) {
     const currentSrc = aceImg.attr("src");
     if (currentSrc.includes("prsection1.png")) {
-      aceImg.attr("src", "/qrselector/img/prsection2.png");
+      aceImg.attr("src", "/qrselesion/img/prsection2.png");
     } else {
-      aceImg.attr("src", "/qrselector/img/prsection1.png");
+      aceImg.attr("src", "/qrselesion/img/prsection1.png");
     }
   } else if (gradiention === "Linear gradient") {
-    aceImg.attr("src", "/qrselector/img/b01.png");
+    aceImg.attr("src", "/qrselesion/img/b01.png");
   }
   const color1 = $("#color1");
   const color2 = $("#color2");
@@ -2159,13 +2159,13 @@ imagesion4.addEventListener("click", function () {
         imageCheckbox &&
         imageCheckbox.checked
       ) {
-        aceImg.src = "qrselector/img/a01.png";
+        aceImg.src = "qrselesion/img/a01.png";
       } else if (colorRadio && colorRadio.checked) {
-        aceImg.src = "qrselector/img/prsection2.png";
+        aceImg.src = "qrselesion/img/prsection2.png";
       } else if (imageCheckbox && imageCheckbox.checked) {
-        aceImg.src = "qrselector/img/1a1.png";
+        aceImg.src = "qrselesion/img/1a1.png";
       } else {
-        aceImg.src = "qrselector/img/body1.png";
+        aceImg.src = "qrselesion/img/body1.png";
       }
     }
   });
@@ -2180,13 +2180,13 @@ imagesion4.addEventListener("click", function () {
         imageCheckbox &&
         imageCheckbox.checked
       ) {
-        aceImg.src = "qrselector/img/a02.png";
+        aceImg.src = "qrselesion/img/a02.png";
       } else if (imageCheckbox && imageCheckbox.checked) {
-        aceImg.src = "qrselector/img/1a2.png";
+        aceImg.src = "qrselesion/img/1a2.png";
       } else if (colorRadio && colorRadio.checked) {
-        aceImg.src = "qrselector/img/greenbody2.png";
+        aceImg.src = "qrselesion/img/greenbody2.png";
       } else {
-        aceImg.src = "qrselector/img/body2.png";
+        aceImg.src = "qrselesion/img/body2.png";
       }
     }
   });
@@ -2201,13 +2201,13 @@ imagesion4.addEventListener("click", function () {
         imageCheckbox &&
         imageCheckbox.checked
       ) {
-        aceImg.src = "qrselector/img/a03.png";
+        aceImg.src = "qrselesion/img/a03.png";
       } else if (colorRadio && colorRadio.checked) {
-        aceImg.src = "qrselector/img/greenbody3.png";
+        aceImg.src = "qrselesion/img/greenbody3.png";
       } else if (imageCheckbox && imageCheckbox.checked) {
-        aceImg.src = "qrselector/img/1a3.png";
+        aceImg.src = "qrselesion/img/1a3.png";
       } else {
-        aceImg.src = "qrselector/img/body3.png";
+        aceImg.src = "qrselesion/img/body3.png";
       }
     }
   });
@@ -2228,13 +2228,13 @@ imagesion5.addEventListener("click", function () {
         imageCheckbox &&
         imageCheckbox.checked
       ) {
-        aceImg.src = "qrselector/img/b01.png";
+        aceImg.src = "qrselesion/img/b01.png";
       } else if (colorRadio && colorRadio.checked) {
-        aceImg.src = "qrselector/img/greenbody4.png";
+        aceImg.src = "qrselesion/img/greenbody4.png";
       } else if (imageCheckbox && imageCheckbox.checked) {
-        aceImg.src = "qrselector/img/c01.png";
+        aceImg.src = "qrselesion/img/c01.png";
       } else {
-        aceImg.src = "qrselector/img/body43.png";
+        aceImg.src = "qrselesion/img/body43.png";
       }
     }
   });
@@ -2250,13 +2250,13 @@ imagesion5.addEventListener("click", function () {
         imageCheckbox &&
         imageCheckbox.checked
       ) {
-        aceImg.src = "qrselector/img/b02.png";
+        aceImg.src = "qrselesion/img/b02.png";
       } else if (colorRadio && colorRadio.checked) {
-        aceImg.src = "qrselector/img/greenbody5.png";
+        aceImg.src = "qrselesion/img/greenbody5.png";
       } else if (imageCheckbox && imageCheckbox.checked) {
-        aceImg.src = "qrselector/img/c02.png";
+        aceImg.src = "qrselesion/img/c02.png";
       } else {
-        aceImg.src = "qrselector/img/body5.png";
+        aceImg.src = "qrselesion/img/body5.png";
       }
     }
   });
@@ -2272,13 +2272,13 @@ imagesion5.addEventListener("click", function () {
         imageCheckbox &&
         imageCheckbox.checked
       ) {
-        aceImg.src = "qrselector/img/b03.png";
+        aceImg.src = "qrselesion/img/b03.png";
       } else if (colorRadio && colorRadio.checked) {
-        aceImg.src = "qrselector/img/greenbody6.png";
+        aceImg.src = "qrselesion/img/greenbody6.png";
       } else if (imageCheckbox && imageCheckbox.checked) {
-        aceImg.src = "qrselector/img/c03.png";
+        aceImg.src = "qrselesion/img/c03.png";
       } else {
-        aceImg.src = "qrselector/img/body6.png";
+        aceImg.src = "qrselesion/img/body6.png";
       }
     }
   });
@@ -2319,13 +2319,13 @@ imagesion4.click(function () {
 
     if (aceImg) {
       if (colorRadio?.checked && imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/a01.png";
+        aceImg.src = "qrselesion/img/a01.png";
       } else if (colorRadio?.checked) {
-        aceImg.src = "qrselector/img/prsection2.png";
+        aceImg.src = "qrselesion/img/prsection2.png";
       } else if (imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/1a1.png";
+        aceImg.src = "qrselesion/img/1a1.png";
       } else {
-        aceImg.src = "qrselector/img/body1.png";
+        aceImg.src = "qrselesion/img/body1.png";
       }
     }
   });
@@ -2337,13 +2337,13 @@ imagesion4.click(function () {
 
     if (aceImg) {
       if (colorRadio?.checked && imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/a02.png";
+        aceImg.src = "qrselesion/img/a02.png";
       } else if (colorRadio?.checked) {
-        aceImg.src = "qrselector/img/greenbody2.png";
+        aceImg.src = "qrselesion/img/greenbody2.png";
       } else if (imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/1a2.png";
+        aceImg.src = "qrselesion/img/1a2.png";
       } else {
-        aceImg.src = "qrselector/img/body2.png";
+        aceImg.src = "qrselesion/img/body2.png";
       }
     }
   });
@@ -2355,13 +2355,13 @@ imagesion4.click(function () {
 
     if (aceImg) {
       if (colorRadio?.checked && imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/a03.png";
+        aceImg.src = "qrselesion/img/a03.png";
       } else if (colorRadio?.checked) {
-        aceImg.src = "qrselector/img/greenbody3.png";
+        aceImg.src = "qrselesion/img/greenbody3.png";
       } else if (imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/1a3.png";
+        aceImg.src = "qrselesion/img/1a3.png";
       } else {
-        aceImg.src = "qrselector/img/body3.png";
+        aceImg.src = "qrselesion/img/body3.png";
       }
     }
   });
@@ -2376,13 +2376,13 @@ imagesion5.click(function () {
 
     if (aceImg) {
       if (colorRadio?.checked && imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/b01.png";
+        aceImg.src = "qrselesion/img/b01.png";
       } else if (colorRadio?.checked) {
-        aceImg.src = "qrselector/img/greenbody4.png";
+        aceImg.src = "qrselesion/img/greenbody4.png";
       } else if (imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/c01.png";
+        aceImg.src = "qrselesion/img/c01.png";
       } else {
-        aceImg.src = "qrselector/img/body43.png";
+        aceImg.src = "qrselesion/img/body43.png";
       }
     }
   });
@@ -2394,13 +2394,13 @@ imagesion5.click(function () {
 
     if (aceImg) {
       if (colorRadio?.checked && imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/b02.png";
+        aceImg.src = "qrselesion/img/b02.png";
       } else if (colorRadio?.checked) {
-        aceImg.src = "qrselector/img/greenbody5.png";
+        aceImg.src = "qrselesion/img/greenbody5.png";
       } else if (imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/c02.png";
+        aceImg.src = "qrselesion/img/c02.png";
       } else {
-        aceImg.src = "qrselector/img/body5.png";
+        aceImg.src = "qrselesion/img/body5.png";
       }
     }
   });
@@ -2412,13 +2412,13 @@ imagesion5.click(function () {
 
     if (aceImg) {
       if (colorRadio?.checked && imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/b03.png";
+        aceImg.src = "qrselesion/img/b03.png";
       } else if (colorRadio?.checked) {
-        aceImg.src = "qrselector/img/greenbody6.png";
+        aceImg.src = "qrselesion/img/greenbody6.png";
       } else if (imageCheckbox?.checked) {
-        aceImg.src = "qrselector/img/c03.png";
+        aceImg.src = "qrselesion/img/c03.png";
       } else {
-        aceImg.src = "qrselector/img/body6.png";
+        aceImg.src = "qrselesion/img/body6.png";
       }
     }
   });
